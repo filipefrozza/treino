@@ -1,6 +1,7 @@
 //ng g service api
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
 import { Bolo } from './bolos';

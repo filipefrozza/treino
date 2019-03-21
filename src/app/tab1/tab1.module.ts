@@ -3,6 +3,11 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
+//ng add @angular/material
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 import { Tab1Page } from './tab1.page';
 
 @NgModule({
@@ -10,6 +15,8 @@ import { Tab1Page } from './tab1.page';
     IonicModule,
     CommonModule,
     FormsModule,
+    ScrollingModule,
+    DragDropModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
   declarations: [Tab1Page]
