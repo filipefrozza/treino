@@ -18,7 +18,7 @@
       </ion-card-content>
     </ion-card>
     <ion-card>
-      <ion-item *ngFor="let b of bolos" class="example-item" href="/tabs/(details:{{b._id}})">
+      <ion-item *ngFor="let b of bolos" class="example-item" routerLink="/tabs/tab2/{{b._id}}">
         <!-- <ion-icon name="desktop" slot="start"></ion-icon> -->
         {{b.nome}}
         <div class="item-note" slot="end">

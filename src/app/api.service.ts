@@ -61,7 +61,7 @@ export class ApiService {
 
 	deleteBolo(id): Observable<Bolo>{
 		const url = `${apiUrl}/${id}`;
-		return this.http.delete<Bolo>(apiUrl, httpOptions).pipe(
+		return this.http.delete<Bolo>(url, httpOptions).pipe(
 			tap(bolo => console.log(`deleted bolo w/ id=${id}`)),
 			catchError(this.handleError<Bolo>(`deleteBolo id=${id}`))
 		);

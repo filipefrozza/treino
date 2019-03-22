@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+    <ion-title>Details</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{bolo.nome}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <p>Preço:</p>
+        <p>{{bolo.preco | currency}}</p>
+      </ion-item>
+      <ion-item>
+        <p>Peso:</p>
+        <p>{{bolo.peso}}</p>
+      </ion-item>
+      <ion-item>
+        <p>Descrição:</p>
+        <p>{{bolo.descricao}}</p>
+      </ion-item>
+      <ion-button type="button" shape="round" color="primary" expand="block" href="tabs/(edit:{{bolo._id}})">Editar</ion-button>
+      <ion-button type="button" shape="round" color="danger" expand="block" (click)="delete(bolo._id)">Deletar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

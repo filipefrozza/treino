@@ -17,7 +17,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab2',
+        path: 'tab2/:id',
         children: [
           {
             path: '',
