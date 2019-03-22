@@ -6,12 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
-	public isTab2: boolean;
+	public isDetalhe: boolean;
+	public isEditar: boolean;
 	constructor(){
-		this.isTab2 = false;
+		this.isDetalhe = false;
+		this.isEditar = false;
 	}
 
 	tabChanged = function(e){
-		this.isTab2 = document.URL.replace('http://','').split('/')[2] == 'tab2';	
+		this.isDetalhe = document.URL.replace('http://','').split('/')[2] == 'detalhe';	
+		this.isEditar = document.URL.replace('http://','').split('/')[2] == 'editar';	
 	}
 }

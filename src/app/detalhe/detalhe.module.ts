@@ -3,14 +3,14 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab2Page } from './tab2.page';
+import { DetalhePage } from './detalhe.page';
 
 // import { Routes } from '@angular/router';
 
 // const routes: Routes = [
 //   {
 //     path: '',
-//     component: Tab2Page
+//     component: DetalhePage
 //   }
 // ];
 
@@ -19,8 +19,8 @@ import { Tab2Page } from './tab2.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab2Page }])
+    RouterModule.forChild([{ path: '', component: DetalhePage }])
   ],
-  declarations: [Tab2Page]
+  declarations: [DetalhePage]
 })
-export class Tab2PageModule {}
+export class DetalhePageModule {}

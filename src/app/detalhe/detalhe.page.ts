@@ -5,11 +5,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Bolo } from '../bolos';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-detalhe',
+  templateUrl: 'detalhe.page.html',
+  styleUrls: ['detalhe.page.scss']
 })
-export class Tab2Page {
+export class DetalhePage {
 	bolo:Bolo = { _id: null, nome: '', descricao: '', peso: null, preco: null, updated_at: null };
 
   	constructor(

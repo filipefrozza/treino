@@ -5,11 +5,11 @@ import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Valida
 import { Bolo } from '../bolos';
 
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss']
+  selector: 'app-adicionar',
+  templateUrl: 'adicionar.page.html',
+  styleUrls: ['adicionar.page.scss']
 })
-export class Tab3Page {
+export class AdicionarPage {
 	boloForm: FormGroup;
 	nome:string='';
 	descricao:string='';
@@ -43,7 +43,7 @@ export class Tab3Page {
 	        let id = res['_id'];
 	        loading.dismiss();
 	        console.log("addBolo",res);
-	        this.router.navigate([ `/tabs/tab2/${id}` ], { relativeTo: this.route.parent });
+	        this.router.navigate([ `/tabs/detalhe/${id}` ], { relativeTo: this.route.parent });
 	        // this.router.navigate([ { outlets: { tab2: id } } ], { relativeTo: this.route.parent });
 	    }, (err) => {
 	        console.log(err);

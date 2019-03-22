@@ -53,7 +53,7 @@ export class ApiService {
 
 	updateBolo(id, bolo): Observable<any>{
 		const url = `${apiUrl}/${id}`;
-		return this.http.put(apiUrl, bolo, httpOptions).pipe(
+		return this.http.put(url, bolo, httpOptions).pipe(
 			tap(bolo => console.log(`updated bolo w/ id=${id}`)),
 			catchError(this.handleError<any>(`updateBolo id=${id}`))
 		);

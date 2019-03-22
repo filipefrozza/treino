@@ -6,12 +6,12 @@ import { Bolo } from '../bolos';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
 })
 
-export class Tab1Page {
+export class HomePage {
 	bolos: Bolo[] = [];
 
 	constructor(
@@ -22,7 +22,11 @@ export class Tab1Page {
 	){}
 
 	ngOnInit() {
-    	this.getBolos();
+		this.getBolos();
+  	}
+
+  	ionViewWillEnter(){
+	    this.getBolos();
   	}
 
   	async getBolos() {

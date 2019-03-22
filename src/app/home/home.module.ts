@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { Tab1Page } from './tab1.page';
+import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
@@ -17,8 +17,8 @@ import { Tab1Page } from './tab1.page';
     FormsModule,
     ScrollingModule,
     DragDropModule,
-    RouterModule.forChild([{ path: '', component: Tab1Page }])
+    RouterModule.forChild([{ path: '', component: HomePage }])
   ],
-  declarations: [Tab1Page]
+  declarations: [HomePage]
 })
-export class Tab1PageModule {}
+export class HomePageModule {}
