@@ -10,18 +10,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {
-  MatInputModule,
-  MatPaginatorModule,
-  MatProgressSpinnerModule,
-  MatSortModule,
-  MatTableModule,
-  MatIconModule,
-  MatButtonModule,
-  MatCardModule,
-  MatFormFieldModule } from "@angular/material";
+// import {
+//   MatInputModule,
+//   MatPaginatorModule,
+//   MatProgressSpinnerModule,
+//   MatSortModule,
+//   MatTableModule,
+//   MatIconModule,
+//   MatButtonModule,
+//   MatCardModule,
+//   MatFormFieldModule } from "@angular/material";
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,17 +30,17 @@ import {
   	BrowserModule, 
   	HttpClientModule,
   	IonicModule.forRoot(), 
-  	AppRoutingModule, 
-  	BrowserAnimationsModule,
-  	MatInputModule,
-    MatPaginatorModule,
-    MatProgressSpinnerModule,
-    MatSortModule,
-    MatTableModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule
+  	AppRoutingModule
+  	// BrowserAnimationsModule
+  	// MatInputModule,
+   //  MatPaginatorModule,
+   //  MatProgressSpinnerModule,
+   //  MatSortModule,
+   //  MatTableModule,
+   //  MatIconModule,
+   //  MatButtonModule,
+   //  MatCardModule,
+   //  MatFormFieldModule
   ],
   providers: [
     StatusBar,

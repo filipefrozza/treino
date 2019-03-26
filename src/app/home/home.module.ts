@@ -15,8 +15,6 @@ import { HomePage } from './home.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    ScrollingModule,
-    DragDropModule,
     RouterModule.forChild([{ path: '', component: HomePage }])
   ],
   declarations: [HomePage]

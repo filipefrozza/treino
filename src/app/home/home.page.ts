@@ -49,7 +49,7 @@ export class HomePage {
 		}
   	}
 
-  	drop(event: CdkDragDrop<string[]>) {
-    	moveItemInArray(this.bolos, event.previousIndex, event.currentIndex);
-  	}
+  	// drop(event: CdkDragDrop<string[]>) {
+   //  	moveItemInArray(this.bolos, event.previousIndex, event.currentIndex);
+  	// }
 }

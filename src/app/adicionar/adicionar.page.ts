@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';import { LoadingController, AlertController } from '@ionic/angular';
+import { Component } from '@angular/core';
+import { LoadingController, AlertController } from '@ionic/angular';
 import { ApiService } from '../api.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
